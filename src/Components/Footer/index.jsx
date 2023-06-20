@@ -124,7 +124,10 @@ const RedesSociais = styled.div`
   }
 `;
 
+const ano = (new Date()).getFullYear();
+
 const Footer = () => {
+
   return (
     <StyledFooter>
       <MarginDisplay>
@@ -166,7 +169,7 @@ const Footer = () => {
         <MarginDisplay>
           <CopyRightRedeSociais>
             <p>
-              © 2023 Provedor de Internet. Todos os direitos reservados
+              © {ano} Provedor de Internet. Todos os direitos reservados
             </p>
 
             <RedesSociais>
