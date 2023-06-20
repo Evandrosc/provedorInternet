@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { Link, scroller as scroll } from 'react-scroll';
 import styled from 'styled-components';
 

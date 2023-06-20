@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import logo from '../../assets/images/logo.png';
 import styled from "styled-components";
 import { Link, scroller as scroll } from 'react-scroll';

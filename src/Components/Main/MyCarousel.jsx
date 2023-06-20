@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useRef, useState } from 'react';
 import internet1 from '../../assets/images/internet1.png';
 import internet2 from '../../assets/images/internet2.png';
