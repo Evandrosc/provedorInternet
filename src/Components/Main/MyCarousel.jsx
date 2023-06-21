@@ -1,9 +1,9 @@
-import internet1 from '../../assets/images/internet1.png';
-import internet1media from '../../assets/images/internet1media.jpg';
-import internet1pequena from '../../assets/images/internet1pequena.jpg';
-import internet2 from '../../assets/images/internet2.png';
-import internet2media from '../../assets/images/internet2media.jpg';
-import internet2pequena from '../../assets/images/internet2pequena.jpg';
+import internet1 from '../../assets/images/internet1.webp';
+import internet1media from '../../assets/images/internet1media.webp';
+import internet1pequena from '../../assets/images/internet1pequena.webp';
+import internet2 from '../../assets/images/internet2.webp';
+import internet2media from '../../assets/images/internet2media.webp';
+import internet2pequena from '../../assets/images/internet2pequena.webp';
 import { Carousel } from 'antd';
 import { scroller as scroll } from 'react-scroll';
 import styled from 'styled-components';

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imgFundoFibraOptica from '../../assets/images/imgFundofibraOptica.jpg';
+import imgFundoFibraOptica from '../../assets/images/imgFundofibraOptica.webp';
 import { corTexto, corFundoQuatro } from "../UI/Variaveis";
 
 import { BiServer, BiRocket } from 'react-icons/bi';
