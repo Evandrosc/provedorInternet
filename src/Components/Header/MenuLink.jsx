@@ -29,7 +29,7 @@ const handleScroll = () => {
   const scrollOptions = {
     duration: 1000,
     smooth: 'easeInOutQuart',
-    offset: mobile ? -100 : -100,
+    offset: mobile ? -110 : -110,
   };
 
   scroll.scrollTo(to, scrollOptions);

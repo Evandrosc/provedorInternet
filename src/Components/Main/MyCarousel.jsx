@@ -9,7 +9,7 @@ import { scroller as scroll } from 'react-scroll';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  padding-top: 5.5rem;
+  padding-top: 6.33rem;
   margin-bottom: 2rem;
 `;
 

@@ -26,7 +26,7 @@ const Cabecalho = () => {
   return (
     <StyledHeader>
       <Navigation isDesktop isActiveMobile={isActiveMobile}>
-        <Logo to='inicio' width={219} height={65} />
+        <Logo to='inicio' width={80} height={80} />
         <NavigationLinks isDesktop>
           <MenuLink to='inicio'>Início</MenuLink>
           <MenuLink to='planos'>Planos</MenuLink>
