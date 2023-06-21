@@ -160,7 +160,7 @@ const Footer = () => {
           </div>
 
           <ContainerSeloAnatel>
-            <img src={seloAnatel} alt='Logo Anatel' />
+            <img src={seloAnatel} alt='Logo Anatel' width='200px' height='85px' />
           </ContainerSeloAnatel>
         </Container>
 

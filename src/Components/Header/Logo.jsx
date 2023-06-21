@@ -8,11 +8,6 @@ const StyledLink = styled(Link)`
 
 const Logo = ({ to, width, height }) => {
 
-  const style = {
-    width: `${width}px`,
-    height: `${height}px`,
-  };
-
   const handleScroll = () => {
     const scrollOptions = {
       duration: 1000,
@@ -24,7 +19,13 @@ const Logo = ({ to, width, height }) => {
 
   return (
     <StyledLink to={to} onClick={handleScroll}>
-      <img src={logo} alt="Logo" title="Logo" style={style} />
+      <img 
+        src={logo} 
+        alt="Logo" 
+        title="Logo" 
+        width={`${width}px`} 
+        height={`${height}px`} 
+      />
     </StyledLink>
   );
 }

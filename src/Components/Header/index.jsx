@@ -12,6 +12,7 @@ const StyledHeader = styled.header`
   background-color: ${corFundoPrimeiro};
   position: fixed;
   width: 100%;
+  max-width: 1420px;
   z-index: 16;
 `;
 
