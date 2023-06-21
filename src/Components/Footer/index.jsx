@@ -72,15 +72,6 @@ const ContainerContatosImg = styled(ContainerContatoImg)`
   color: ${corFundoPrimeiro};
 `;
 
-const ContainerSeloAnatel = styled.div`
-  height: 5rem;
-
-  > img {
-    height: 100%;
-  }
-`;
-
-
 const ContainerCopyRightRedeSociais = styled.div`
   border-top: 1px solid ${corFundoSegundo};
   padding: 2rem 0;
@@ -159,9 +150,9 @@ const Footer = () => {
             </Endereco>
           </div>
 
-          <ContainerSeloAnatel>
-            <img src={seloAnatel} alt='Logo Anatel' width='200px' height='80px' />
-          </ContainerSeloAnatel>
+          <div>
+            <img src={seloAnatel} alt='Logo Anatel' width='200px' height='85px' />
+          </div>
         </Container>
 
       </MarginDisplay>
