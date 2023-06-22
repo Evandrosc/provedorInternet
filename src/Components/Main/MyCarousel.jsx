@@ -30,7 +30,7 @@ const slides = [
     id: 1,
     img: internet1,
     imgMedia: internet1media,
-    img3Pequena: internet1pequena
+    imgPequena: internet1pequena
   },
   {
     id: 2,
@@ -60,18 +60,12 @@ const MyCarousel = () => {
               <source 
                 media='(max-width: 620px)'
                 srcSet={slide.imgPequena} 
-                alt='imagem de planos' 
-                width='600px' 
-                height='600px'
               />
               <source 
                 media='(max-width: 850px)'
                 srcSet={slide.imgMedia} 
-                alt='imagem de planos' 
-                width='800px' 
-                height='800px'
               />
-              <img src={slide.img} alt={`Image ${slide.id}`} width='1419px' height='319px' />
+              <img src={slide.img} alt='imagem do carrossel'  width='1419px' height='319px' />
             </picture>
           </ContainerCarousel>
         ))}
