@@ -45,7 +45,7 @@ const handleScroll = () => {
   };
 
   return (
-    <StyledMenuLink to={to} mobile={mobile} onClick={handleClick}>
+    <StyledMenuLink to={to} mobile={mobile} onClick={handleClick} rel='nofollow'>
       {children}
     </StyledMenuLink>
   );

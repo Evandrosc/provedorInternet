@@ -21,8 +21,9 @@ const Logo = ({ to, width, height }) => {
     <StyledLink to={to} onClick={handleScroll}>
       <img 
         src={logo} 
-        alt="Logo" 
-        title="Logo" 
+        alt="Logo"
+        rel='nofollow'
+        title='Logo' 
         width={`${width}px`} 
         height={`${height}px`} 
       />
