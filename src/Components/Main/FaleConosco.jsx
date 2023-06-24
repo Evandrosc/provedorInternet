@@ -10,6 +10,7 @@ const FaleConoscoSection = styled.section`
   margin: 2rem 0;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -23,11 +24,10 @@ const FaleConoscoContainerParagrafo = styled.div`
 `;
 
 const FaleConoscoContainerForm = styled.div`
-  width: 50%;
+  width: 45%;
 
   @media screen and (max-width: 768px) {
     width: 100%;
-    margin-top: 2rem;
   }
 `;
 
