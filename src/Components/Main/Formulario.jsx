@@ -61,7 +61,7 @@ const Formulario = () => {
     const { value } = event.target;
     setName(value);
 
-    const regex = /^[A-Za-z]{4,50}$/;
+    const regex = /^[A-Za-z\s]{4,50}$/;
     if (!regex.test(value)) {
       setNameError('Apenas letras e no mínimo 4 caracteres.');
     } else {
