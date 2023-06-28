@@ -38,33 +38,32 @@ const BoxPlanos = styled.div`
   @media screen and (max-width: 768px) {
     gap: 0;
   };
-`;
 
-const BoxPlano = styled.div`
-  background-color: ${corFundoSegundo};
-  width: 32%;
-  min-width: 82.6656px;
-  margin-bottom: 1rem;
-  padding: 2rem 0;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  > div {
+    background-color: ${corFundoSegundo};
+    width: 32%;
+    min-width: 82.6656px;
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
-  @media screen and (max-width: 1024px) {
-    width: 48%;
-  };
+    @media screen and (max-width: 1024px) {
+      width: 48%;
+    };
 
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  };
-`;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    };
 
-
-const TituloPlano = styled.h2`
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 500;
+    > h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
 `;
 
 const VelocidadePlano = styled.p`
@@ -85,18 +84,18 @@ const ListasVantagensPlano = styled.ul`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-`;
 
-const ListaVantagemPlano = styled.li`
-  width: 80%;
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid black;
-  display: flex;
-  justify-content: center;
-  gap: 4%;
-  align-items: center;
+  > li {
+    width: 80%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    align-items: center;
+  }
 `;
 
 const BtnPlano = styled.a`
@@ -186,15 +185,15 @@ const Planos = () => {
       </Select>
       <BoxPlanos>
         {planos.map(plano => (
-          <BoxPlano key={plano.id}>
-            <TituloPlano>{plano.titulo}</TituloPlano>
+          <div key={plano.id}>
+            <h2>{plano.titulo}</h2>
             <VelocidadePlano>{plano.velocidade} Mb</VelocidadePlano>
             <PrecoPlano>R${plano.preco} por mês</PrecoPlano>
             <ListasVantagensPlano>
-              <ListaVantagemPlano> <AiOutlineDown />100% de download</ListaVantagemPlano>
-              <ListaVantagemPlano> <AiOutlineUp /> 50% de upload</ListaVantagemPlano>
-              <ListaVantagemPlano> <BiInfinite /> Franquia Ilimitada</ListaVantagemPlano>
-              <ListaVantagemPlano> <BiWifi /> Instalação Gratuita</ListaVantagemPlano>
+              <li> <AiOutlineDown />100% de download</li>
+              <li> <AiOutlineUp /> 50% de upload</li>
+              <li> <BiInfinite /> Franquia Ilimitada</li>
+              <li> <BiWifi /> Instalação Gratuita</li>
             </ListasVantagensPlano>
             <BtnPlano
               href={`https://wa.me//5586998200728?text=Olá,%20gostaria%20de%20contratar%20o%20plano%20*${plano.titulo}*%20no%20valor%20de%20*${plano.preco}*%20na%20cidade%20*${plano.cidade}*.`}
@@ -203,7 +202,7 @@ const Planos = () => {
             >
               Assinar
             </BtnPlano>
-          </BoxPlano>
+          </div>
         ))}
       </BoxPlanos>
       <EnfasePlanos>
