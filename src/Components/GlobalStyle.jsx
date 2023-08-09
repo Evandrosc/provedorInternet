@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  max-width: 1420px;
   margin: 0 auto;
 }
 `
